@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-02-28T11:44:33 PST" name="Default suite" finished-at="2024-02-28T11:44:47 PST" duration-ms="13819">
+    <groups>
+    </groups>
+    <test started-at="2024-02-28T11:44:33 PST" name="Default test" finished-at="2024-02-28T11:44:47 PST" duration-ms="13819">
+      <class name="manipal2.DataDrivenTesting.ReadExcel">
+        <test-method signature="fblogin()[pri:0, instance:manipal2.DataDrivenTesting.ReadExcel@2d7275fc]" started-at="2024-02-28T11:44:33 PST" name="fblogin" finished-at="2024-02-28T11:44:47 PST" duration-ms="13664" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fblogin -->
+      </class> <!-- manipal2.DataDrivenTesting.ReadExcel -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
