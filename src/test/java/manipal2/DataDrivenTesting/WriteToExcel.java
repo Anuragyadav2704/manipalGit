@@ -1,6 +1,9 @@
 package manipal2.DataDrivenTesting;
 
 
+	
+
+
 	import java.io.File;
 
 	import java.io.FileInputStream;
@@ -25,7 +28,7 @@ import java.io.IOException;
 
 	import org.testng.annotations.Test;
 	 
-	public class ReadExcel {
+	public class WriteToExcel {
 
 		WebDriver driver;
 
@@ -90,7 +93,17 @@ import java.io.IOException;
 				driver.findElement(By.xpath("//input[@id = 'pass']")).clear();
 
 				driver.findElement(By.xpath("//input[@id = 'pass']")).sendKeys(cell.getStringCellValue());
+				String title = driver.getTitle();
+				System.out.println(title);
+				//to write the data to excel
+				FileOutputStream fos = new FileOutputStream(src);
 				
+				//create the cell where data need to be written
+				sheet.getRow(i).createCell(2).setCellValue(title);
+				
+				//perform the write operation
+				workbook.write(fos);
+				fos.close();
 				
 
 
